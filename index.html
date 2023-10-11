@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <title>AirDrop Hunter</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header
+            id="demo"
+            class="demo text-white d-flex justify-content-between align-items-center"
+        >
+            <p class="mb-0 text-center flex-grow-1">
+                This project is beta. DYOR
+            </p>
+            <button id="close-demo" class="btn px-3">
+                <img src="./public/svg/close-icon.svg" alt="cross button" />
+            </button>
+        </header>
+        <nav class="navigation mx-2 row align-items-center pt-4 pb-3 g-sm-2">
+            <div class="d-flex mb-3 col-12 col-sm-6">
+                <a href="#"
+                    ><img
+                        src="./public/icons/mainlogo.svg"
+                        alt="airDrop hunter logo"
+                        class="logo"
+                /></a>
+                <div class="ms-auto d-flex align-items-center">
+                    <button class="btn btn-primary text-white b-block me-2">
+                        Deposit
+                    </button>
+                    <button class="btn btn-light">
+                        <img src="./public/svg/dots-btn.svg" alt="dot btn" />
+                    </button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 align-items-center mb-3">
+                <div class="d-flex">
+                    <div
+                        class="bg-light d-flex align-items-center justify-content-center p-2 me-2 rounded-2"
+                    >
+                        <img
+                            src="./public/svg/octogram.svg"
+                            height="16px"
+                            width="16px"
+                        />
+                    </div>
+                    <div
+                        class="status-bar bg-light d-flex justify-content-between align-items-center px-2 rounded-2"
+                    >
+                        <span class="fw-semibold">850$</span>
+                        <span class="text-muted">0xf7n...78ba</span>
+                        <div>
+                            <span
+                                ><img src="./public/svg/gas.svg" class="me-1"
+                            /></span>
+                            <span class="fw-semibold">0$</span>
+                            <span
+                                ><img src="./public/icons/metamask.png" alt=""
+                            /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section id="news-section">
+            <div class="container">
+                <div class="news rounded-3 bg-light">
+                    <div class="news-content row g-0">
+                        <div
+                            id="news-slider"
+                            class="news-content-slider order-1 col-12 col-lg-6 order-lg-0"
+                        >
+                            <!-- Content rendering by function renderNews() -->
+                        </div>
+                        <div class="order-0 col-12 col-lg-6 order-lg-1 z-1">
+                            <img
+                                class="img-fluid d-block col-12"
+                                src="./public/news.png"
+                                alt="news billboard"
+                            />
+                        </div>
+                    </div>
+
+                    <div
+                        id="news-expand"
+                        class="news-expand row align-items-center"
+                    ></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Navigation -->
+        <section>
+            <div class="container mb-4 mt-4">
+                <div
+                    class="bg-white rounded-2 d-flex justify-content-between align-items-center px-2"
+                >
+                    <button
+                        class="handle-nav prev-icon btn-arrow rounded-circle d-flex justify-content-center align-items-center border-0"
+                        id="prev-nav"
+                    >
+                        <img src="./public/svg/prev.svg" />
+                    </button>
+                    <div class="slider-body">
+                        <div
+                            id="tariff-navigation"
+                            class="navigation-slider"
+                        ></div>
+                    </div>
+                    <button
+                        class="handle-nav next-icon btn-arrow rounded-circle d-flex justify-content-center align-items-center border-0"
+                        id="next-nav"
+                    >
+                        <img src="./public/svg/next.svg" />
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section>
+            <div class="container">
+                <div
+                    id="product-grid"
+                    class="row justify-content-center g-3"
+                ></div>
+            </div>
+        </section>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
